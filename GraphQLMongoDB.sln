@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLMongoDB", "GraphQLMongoDB\GraphQLMongoDB.csproj", "{2C53519E-F4AF-4074-977A-9E60F6DB6297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLMongoDB.Domain", "GraphQLMongoDB.Domain\GraphQLMongoDB.Domain.csproj", "{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQLMongoDB.Data", "GraphQLMongoDB.Data\GraphQLMongoDB.Data.csproj", "{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|x64.Build.0 = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|x64.ActiveCfg = Release|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|x64.Build.0 = Release|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C53519E-F4AF-4074-977A-9E60F6DB6297}.Release|x86.Build.0 = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|x64.Build.0 = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{84AA1FE1-A7C6-4A7D-9724-25EE2EF0A5E5}.Release|x86.Build.0 = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|x64.Build.0 = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Debug|x86.Build.0 = Debug|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|x64.ActiveCfg = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|x64.Build.0 = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|x86.ActiveCfg = Release|Any CPU
+		{182A63A2-0D12-4629-BE7E-A7EA75DE4C68}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0346EA6E-E34A-436D-B852-6167D52DDB31}
+	EndGlobalSection
+EndGlobal
