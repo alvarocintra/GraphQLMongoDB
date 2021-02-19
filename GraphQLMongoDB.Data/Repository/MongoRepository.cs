@@ -17,21 +17,21 @@ namespace GraphQLMongoDB.Data.Repository
 
         public MongoRepository(IDatabaseSettings settings)
         {
-            var database = new MongoClient(settings.ConnectionString).GetDatabase(settings.DatabaseName);
-            _collection = database.GetCollection<TDocument>(GetCollectionName(typeof(TDocument)));
+            var database = new MongoClient("mongodb://127.0.0.1:27017/?retryWrites=true&w=majority").GetDatabase("default");
+            _collection = database.GetCollection<TDocument>(typeof(TDocument).Name);
         }
 
-        private protected string GetCollectionName(Type documentType)
-        {
-            var name = ((BsonCollectionAttribute)documentType.GetCustomAttributes(
-                    typeof(BsonCollectionAttribute),
-                    true)
-                .FirstOrDefault())?.CollectionName;
-            return ((BsonCollectionAttribute)documentType.GetCustomAttributes(
-                    typeof(BsonCollectionAttribute),
-                    true)
-                .FirstOrDefault())?.CollectionName;
-        }
+        //private protected string GetCollectionName(Type documentType)
+        //{
+        //    var name = ((BsonCollectionAttribute)documentType.GetCustomAttributes(
+        //            typeof(BsonCollectionAttribute),
+        //            true)
+        //        .FirstOrDefault())?.CollectionName;
+        //    return ((BsonCollectionAttribute)documentType.GetCustomAttributes(
+        //            typeof(BsonCollectionAttribute),
+        //            true)
+        //        .FirstOrDefault())?.CollectionName;
+        //}
 
         public virtual IQueryable<TDocument> AsQueryable()
         {

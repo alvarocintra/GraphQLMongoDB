@@ -40,6 +40,8 @@ namespace GraphQLMongoDB
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseWebSockets();
+
             app
                 .UseRouting()
                 .UseEndpoints(endpoints =>
