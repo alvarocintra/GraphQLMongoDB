@@ -24,6 +24,8 @@ namespace GraphQLMongoDB
             services.AddSingleton<IDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
 
+            services.AddInMemorySubscriptions();
+
             services
                 .AddGraphQLServer()
                 .AddQueryType<Query>()

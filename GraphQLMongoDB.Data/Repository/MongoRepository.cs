@@ -21,18 +21,6 @@ namespace GraphQLMongoDB.Data.Repository
             _collection = database.GetCollection<TDocument>(typeof(TDocument).Name);
         }
 
-        //private protected string GetCollectionName(Type documentType)
-        //{
-        //    var name = ((BsonCollectionAttribute)documentType.GetCustomAttributes(
-        //            typeof(BsonCollectionAttribute),
-        //            true)
-        //        .FirstOrDefault())?.CollectionName;
-        //    return ((BsonCollectionAttribute)documentType.GetCustomAttributes(
-        //            typeof(BsonCollectionAttribute),
-        //            true)
-        //        .FirstOrDefault())?.CollectionName;
-        //}
-
         public virtual IQueryable<TDocument> AsQueryable()
         {
             return _collection.AsQueryable();

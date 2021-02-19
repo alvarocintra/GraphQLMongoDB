@@ -8,7 +8,10 @@ namespace GraphQLMongoDB.Data.GraphQL
 {
     public class Mutation
     {
-        public async Task<Book> CreateBook([Service] IMongoRepository<Book> repository, [Service] ITopicEventSender eventSender, Book inputBook)
+        public async Task<Book> CreateBook(
+            [Service] IMongoRepository<Book> repository, 
+            [Service] ITopicEventSender eventSender, 
+            Book inputBook)
         {
             repository.InsertOne(inputBook);
 
@@ -17,7 +20,10 @@ namespace GraphQLMongoDB.Data.GraphQL
             return inputBook;
         }
 
-        public async Task<Author> CreateAuthor([Service] IMongoRepository<Author> repository, [Service] ITopicEventSender eventSender, string name)
+        public async Task<Author> CreateAuthor(
+            [Service] IMongoRepository<Author> repository,
+            [Service] ITopicEventSender eventSender, 
+            string name)
         {
             var author = new Author
             {

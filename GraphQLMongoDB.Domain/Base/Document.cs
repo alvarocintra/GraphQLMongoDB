@@ -8,11 +8,11 @@ namespace GraphQLMongoDB.Domain.Base
     {
         protected Document()
         {
-            CreatedDate = DateTime.UtcNow;
+            CreatedAt = DateTime.UtcNow;
         }
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }
